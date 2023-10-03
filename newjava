@@ -4,3 +4,11 @@ class code- A
 	::::codeA:::::
 	::::codeA:::::
 }
+class code- B
+{
+        ::::codeB:::::
+        ::::codeB:::::
+        ::::codeB:::::
+}
+
+
