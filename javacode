@@ -1,3 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+int checkArray(int n,int m,int *array1,int *array2)
+{
+	int i,j,c=0;
+	if(n==m)
+	{
+	for(i=0;i<n;i++)
+		{
+			for(j=0;j<m;j++)
+			{
+				if(array1[i]==array2[j])
+				{
+					array2[j]='\n';
+					c++;
+					break;
+				}
+			}
+		}
+		if(c==n)
+			return 1;
+	}
+	return 0;
+}
+int main()
+{
+    int n, m,i,j,c=0;
+    printf("\nEnter number of elements in 1st array : ");
+	scanf("%d",&n);
+    printf("\nEnter number of elements in 2nd array : ");
+	scanf("%d",&m);
+	int a1[n];
+    int a2[m];
+    printf("\nEnter %d elements of an 1st array :\n",n);
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d",&a1[i]);
+    }
+    printf("\nEnter %d elements of an 2nd array :\n",m);
+   	for(i = 0; i < m; i++)
+   	{
+    	scanf("%d",&a2[i]);
+    }
+    c=checkArray(n,m,a1,a2);
+	if(c==1)
+        printf("Same");
+	else
+	    printf("Not same");		
+	return 0;
+}
 import java.util.Scanner;
 class AreaOfTriangle 
 {
